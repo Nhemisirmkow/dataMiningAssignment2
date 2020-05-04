@@ -9,7 +9,7 @@ train_data_fraction = 0.75
 if __name__ == "__main__":
     data_path = "./datasets_raw/training_set_VU_DM.csv"
 
-    data = pd.read_csv(data_path, parse _dates=['date_time'])
+    data = pd.read_csv(data_path, parse_dates=['date_time'])
     data.set_index(["srch_id"])
 
     srch_ids = list(set(data['srch_id']))
